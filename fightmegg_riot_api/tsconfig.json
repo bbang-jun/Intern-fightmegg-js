@@ -1,0 +1,10 @@
+{
+  "compileOption": {
+    "module": "es2020",
+    "resolveJsonModule": true,
+    "esModuleInterop":true
+  },
+  "ts-node": {
+    "ESM": true
+  }
+}

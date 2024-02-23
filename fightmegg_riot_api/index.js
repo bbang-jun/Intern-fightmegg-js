@@ -2,9 +2,7 @@ import { RiotAPI, RiotAPITypes, PlatformId } from '@fightmegg/riot-api';
 import { DDragon } from '@fightmegg/riot-api';
 
 // JSON 파일을 import 시 assert 구문을 추가함으로써 throw new ERR_IMPORT_ASSERTION_TYPE_MISSING(url, validType); 오류 해결
-const config = await import('./config/config.json', {
-  assert: { type: 'json' }
-});
+const config = await import('./config/config.json', {assert: { type: 'json' }});
 
 (async () => {
     const XRiotToken = config.default['X-Riot-Token'];
@@ -18,7 +16,7 @@ const config = await import('./config/config.json', {
         const summoner = await rAPI.account.getByRiotId(
             {
               region: PlatformId.ASIA, 
-              gameName: "사랑해 젤리피쉬", 
+              gameName: "빵준갓", 
               tagLine: "KR1",
             }
         );
